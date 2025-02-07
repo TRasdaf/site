@@ -45,6 +45,10 @@
             letter-spacing: rem(2);
             
             animation: move4 2000ms;
+
+            @include mobile {
+                width: rem(300);
+            }
         }
 
         &-subtitle {

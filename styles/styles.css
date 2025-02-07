@@ -467,6 +467,11 @@ a {
   -webkit-animation: move4 2000ms;
           animation: move4 2000ms;
 }
+@media (width <= 767.98px) {
+  .hero__body-title {
+    width: 18.75rem;
+  }
+}
 .hero__body-subtitle {
   font-size: clamp(0.875rem, 0.8112745098rem + 0.2614379085vw, 1.125rem);
   width: 31.25rem;
