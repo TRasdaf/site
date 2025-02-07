@@ -1,0 +1,20 @@
+:root {
+    --color-light: #FFFFFF;
+    --color-grey: #999999;
+    --color-dark: #00040E;
+
+    --font-family: 'Poppins', sans-serif;
+
+    --container-width: 1920px;
+    --container-padding-x: 130px;
+
+    --section-padding-y: 35px;
+
+    --transition-duration: 0.2s;
+
+    @include tablet {
+        --container-padding-x: 30px;
+        
+        --section-padding-y: 15px;
+    }
+}

@@ -1,0 +1,21 @@
+@import 
+    './_media',
+    './_normalize',
+    './_fonts',
+    './_mixins',
+    './_variables',
+    './_utils',
+    './_globals',
+    './functions';
+
+@import
+    './blocks/header',
+    './blocks/hero',
+    './blocks/mini',
+    './blocks/all',
+    './blocks/button',
+    './blocks/sections',
+    './blocks/card',
+    './blocks/info',
+    './blocks/footer',
+    './blocks/img';

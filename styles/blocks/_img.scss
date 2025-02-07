@@ -1,0 +1,54 @@
+.img__1 {
+    position: absolute;
+    z-index: -1001;
+    top: 0;
+    right: 0;
+    animation: move3 2000ms;
+    width: 55vw;
+
+    @include tablet {
+        @include visually-hidden;
+    }
+}
+
+.img__2 {
+    position: absolute;
+    z-index: -1001;
+    top: rem(-110);
+    right: 0;
+}
+
+.img__3 {
+    position: absolute;
+    z-index: -1001;
+    top: rem(-110);
+    left: 0;
+}
+
+.img__4 {
+    position: absolute;
+    z-index: -1001;
+    top: 0;
+    right: 0;
+}
+
+.img__5 {
+    position: absolute;
+    z-index: -1001;
+    top: rem(-110);
+    right: 0;
+}
+
+.img__6 {
+    position: absolute;
+    z-index: -1001;
+    top: rem(-700);
+    left: 0;
+}
+
+.img__7 {
+    position: absolute;
+    z-index: -1001;
+    bottom: rem(-600);
+    right: 0;
+}

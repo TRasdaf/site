@@ -1,0 +1,25 @@
+.mini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: rem(45);
+
+    @include tablet {
+        column-gap: rem(30);
+    }
+    
+    &__element {
+        display: flex;
+        align-items: center;
+        column-gap: rem(12);
+    }
+
+    &__title {
+        @include fluid-text(48, 24);
+    }
+
+    &__subtitle {
+        @include fluid-text(30, 18);
+        padding-top: rem(2);
+    }
+}

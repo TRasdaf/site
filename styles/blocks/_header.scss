@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    column-gap: rem(20);
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        min-width: rem(150);
+        column-gap: rem(7);
+        font-size: rem(18);
+        animation: move5 2000ms;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: rem(50);
+        align-items: center;
+        animation: move1 2000ms;
+
+        @include tablet {
+            column-gap: rem(20);
+        }
+    }
+
+    &__item {
+        position: relative;
+        @include fluid-text(18, 14);
+    }
+
+    &__link {
+        @include hover {
+            color: var(--color-light);
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            translate: -50%;
+            width: 0;
+            height: rem(2);
+            background-color: currentColor;
+            transition-duration: inherit;
+        }
+    }
+}

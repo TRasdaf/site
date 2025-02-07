@@ -1,0 +1,140 @@
+.hero {
+    padding-left: rem(130);
+    display: grid;
+    grid-template-columns: 50% auto;
+
+    @include tablet {
+        padding-left: rem(30);
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 45vw;
+        min-height: rem(500);
+        row-gap: rem(30);
+        padding-bottom: rem(80);
+
+        &-up {
+            @include fluid-text(18, 14);
+            display: flex;
+            align-items: center;
+            column-gap: rem(20);
+            width: rem(460);
+            height: rem(40);
+            padding: rem(10) rem(16);
+            border-radius: rem(10);
+
+            animation: move5 2000ms;
+        }
+
+        &-title {
+            @include fluid-text(96, 48);
+            width: rem(500);
+            font-weight: 600;
+            line-height: 0.95;
+            letter-spacing: rem(2);
+            
+            animation: move4 2000ms;
+        }
+
+        &-subtitle {
+            @include fluid-text(18, 14);
+            width: rem(500);
+            animation: move5 2000ms;
+        }
+    }
+
+    &__images {
+        position: relative;
+        height: 47vw;
+        pointer-events: none;
+
+        @include tablet {
+            @include visually-hidden;
+        }
+
+        &-logo {
+            position: absolute;
+            right: 11vw;
+            bottom: 18vw;
+            animation: move1 2000ms;
+            width: 60%;
+        }
+
+        &-1 {
+            position: absolute;
+            right: 12vw;
+            bottom: 14vw;
+            animation: move2 2000ms;
+            width: 10%;
+        }
+
+        &-2 {
+            position: absolute;
+            right: 36vw;
+            bottom: 13vw;
+            animation: move2 2000ms;
+            width: 6%;
+        }
+
+        &-hand {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            animation: move3 2000ms;
+            width: 100%;
+        }
+    }
+}
+
+@keyframes move1 {
+    0% {
+        translate: rem(800);
+    }
+
+    100% {
+        translate: 0;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        translate: rem(900);
+    }
+
+    100% {
+        translate: 0;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        translate: rem(1000);
+    }
+
+    100% {
+        translate: 0;
+    }
+}
+
+@keyframes move4 {
+    0% {
+        translate: rem(-800);
+    }
+
+    100% {
+        translate: 0;
+    }
+}
+
+@keyframes move5 {
+    0% {
+        translate: rem(-1000);
+    }
+
+    100% {
+        translate: 0;
+    }
+}
