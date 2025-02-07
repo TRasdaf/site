@@ -22,3 +22,9 @@
 .section {
     position: relative;
 }
+
+.hidden-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}

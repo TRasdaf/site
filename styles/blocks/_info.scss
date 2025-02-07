@@ -23,6 +23,12 @@
         display: flex;
         column-gap: rem(30);
         justify-content: center;
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: rem(15);
+            align-items: center;
+        }
     }
 
     &__card {
@@ -33,6 +39,10 @@
         row-gap: rem(30);
         padding: rem(60) rem(40);
         border-radius: rem(20);
+
+        @include mobile {
+            width: rem(300);
+        }
 
         @include tablet {
             padding: rem(30) rem(20);

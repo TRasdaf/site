@@ -2,10 +2,18 @@
     display: grid;
     grid-template-columns: 45% 55%;
     column-gap: rem(20);
+
+    @include mobile {
+        grid-template-columns: auto;
+    }
     
     &--inverse {
         display: grid;
         grid-template-columns: 50% 50%;
+
+        @include mobile {
+            grid-template-columns: auto;
+        }
     }
 
     &__images {
